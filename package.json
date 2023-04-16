@@ -1,8 +1,14 @@
 {
   "name": "cli-inputs",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.5",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "auther": "nknight amamiya<nknight.works@variussoftware.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
   "dependencies": {
     "@types/node": "^18.15.11",
     "typescript": "^5.0.4"
