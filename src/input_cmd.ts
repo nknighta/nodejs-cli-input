@@ -7,11 +7,9 @@ export const input_cmd = () => {
     });
 
     reader.on("line", (line:void) => {
-        //改行ごとに"line"イベントが発火される
-        lines.push(line); //ここで、lines配列に、標準入力から渡されたデータを入れる
+        lines.push(line);
     });
     reader.on("close", () => {
-        //標準入力のストリームが終了すると呼ばれる
         console.log(lines);
     });
 }
